@@ -144,7 +144,7 @@ export class Viewer {
 
     this.addAxesHelper();
     this.addGUI();
-    if (options.kiosk) this.gui.close();
+    if (options.kiosk) this.gui.hide();
 
     this.animate = this.animate.bind(this);
     requestAnimationFrame( this.animate );
